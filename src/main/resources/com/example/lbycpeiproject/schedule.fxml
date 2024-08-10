@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
@@ -9,179 +10,20 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: #368C28;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lbycpeiproject.ScheduleController">
+<AnchorPane fx:id="schedulePane" prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: #368C28;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lbycpeiproject.ScheduleController">
    <children>
-      <Button fx:id="returnButton" layoutX="25.0" layoutY="23.0" mnemonicParsing="false" onAction="#returnWindow" prefHeight="119.0" prefWidth="330.0" style="-fx-background-color: #87B758;" text="&lt; Return" textAlignment="CENTER" textFill="WHITE">
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="23.0" mnemonicParsing="false" onAction="#returnWindow" prefHeight="78.0" prefWidth="214.0" style="-fx-background-color: #87B758;" text="&lt; Return" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font name="Cambria Math" size="48.0" />
+            <Font name="Cambria Math" size="35.0" />
          </font>
       </Button>
-      <Label layoutX="440.0" layoutY="46.0" prefHeight="96.0" prefWidth="476.0" text="Schedule Maker" textFill="WHITE">
+      <Label layoutX="275.0" layoutY="30.0" text="Schedule Maker" textFill="WHITE">
          <font>
-            <Font name="Comic Sans MS" size="60.0" />
+            <Font name="Comic Sans MS" size="44.0" />
          </font>
       </Label>
-      <HBox layoutX="48.0" layoutY="170.0" prefHeight="100.0" prefWidth="200.0">
+      <HBox layoutX="111.0" layoutY="170.0" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <VBox prefHeight="200.0" prefWidth="100.0">
-               <children>
-                  <StackPane prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="7:30 AM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="80.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="8:30 AM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="128.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="9:30 AM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="104.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="10:30 AM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="128.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="11:30 AM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="152.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="12:30 PM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="176.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="1:30 PM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="200.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="2:30 PM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="224.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="3:30 PM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="248.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="4:30 PM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="272.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="5:30 PM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="296.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="6:30 PM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="320.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="7:30 PM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="344.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="8:30 PM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-                  <StackPane layoutX="10.0" layoutY="368.0" prefHeight="150.0" prefWidth="200.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                        <Label text="9:30 PM">
-                           <font>
-                              <Font name="Comic Sans MS" size="12.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-               </children>
-            </VBox>
             <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
                <children>
                   <StackPane prefHeight="150.0" prefWidth="200.0">
@@ -208,7 +50,6 @@
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" layoutX="10.0" layoutY="396.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" layoutX="10.0" layoutY="396.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" layoutX="10.0" layoutY="396.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" layoutX="10.0" layoutY="396.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                </children>
             </VBox>
             <VBox layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
@@ -223,7 +64,6 @@
                         </Label>
                      </children>
                   </StackPane>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
@@ -266,7 +106,6 @@
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                </children>
             </VBox>
             <VBox layoutX="406.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
@@ -281,7 +120,6 @@
                         </Label>
                      </children>
                   </StackPane>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
@@ -324,7 +162,6 @@
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                </children>
             </VBox>
             <VBox layoutX="670.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
@@ -353,10 +190,117 @@
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="24.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
                </children>
             </VBox>
          </children>
       </HBox>
+      <TextField fx:id="courseName" layoutX="792.0" layoutY="23.0" prefHeight="26.0" prefWidth="182.0" />
+      <TextField fx:id="courseTime" layoutX="792.0" layoutY="55.0" prefHeight="26.0" prefWidth="182.0" />
+      <Label layoutX="656.0" layoutY="22.0" text="Course Name:" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="732.0" layoutY="54.0" text="Time:" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="792.0" layoutY="120.0" mnemonicParsing="false" onAction="#addClasses" style="-fx-background-color: #87B758;" text="Add" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="15.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="847.0" layoutY="120.0" mnemonicParsing="false" onAction="#removeClasses" style="-fx-background-color: #87B758;" text="Remove" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="courseDay" layoutX="792.0" layoutY="88.0" prefHeight="26.0" prefWidth="182.0" />
+      <Label layoutX="732.0" layoutY="87.0" text="Days:" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="926.0" layoutY="120.0" mnemonicParsing="false" onAction="#editClasses" style="-fx-background-color: #87B758;" text="Edit" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Cambria Math" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="58.0" layoutY="211.0" text="7:30AM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="235.0" text="8:30AM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="259.0" text="9:30AM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="283.0" text="10:30AM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="307.0" text="11:30AM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="331.0" text="12:30PM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="355.0" text="1:30PM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="379.0" text="2:30PM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="403.0" text="3:30PM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="427.0" text="4:30PM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="451.0" text="5:30PM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="475.0" text="6:30PM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="499.0" text="7:30PM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="523.0" text="8:30PM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="547.0" text="9:30PM" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
